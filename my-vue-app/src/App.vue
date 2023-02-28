@@ -1,17 +1,28 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+// 1. importare il componente
+import AppTitle from './components/AppTitle.vue'
+export default {
+  components: {
+    // 2. registrare il componente che abbiamo importato
+    AppTitle
+  },
+  data() {
+    return {
+      message: 'Ciao ciao ciao'
+    }
+  },
+  methods: {
+    
+  }
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <!-- 3. utilizzo il componente -->
+  <AppTitle></AppTitle>
+
+
 </template>
 
 <style scoped>
