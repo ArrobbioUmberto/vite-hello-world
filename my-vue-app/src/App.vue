@@ -1,14 +1,16 @@
 <script>
 // 1. importare il componente
-import AppTitle from './components/AppTitle.vue'
+// import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
 export default {
   components: {
     // 2. registrare il componente che abbiamo importato
-    AppTitle
+    AppHero,
+    // AppTitle
   },
   data() {
     return {
-      message: 'Ciao ciao ciao'
+      
     }
   },
   methods: {
@@ -20,7 +22,13 @@ export default {
 <template>
 
   <!-- 3. utilizzo il componente -->
-  <AppTitle></AppTitle>
+  <div>
+    <AppHero></AppHero>
+  </div>
+  <!-- <AppTitle></AppTitle> -->
+  
+  
+ 
 
 
 </template>
